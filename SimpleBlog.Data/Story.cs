@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using SimpleBlog.Services.Contracts;
+﻿using System.Collections.Generic;
+using SimpleBlog.Data.Contracts;
 
-namespace SimpleBlog.Services
+namespace SimpleBlog.Data
 {
     public class Story : IEntityBase
     {

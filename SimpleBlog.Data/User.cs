@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using SimpleBlog.Services.Contracts;
+using SimpleBlog.Data.Contracts;
 
-namespace SimpleBlog.Services
+namespace SimpleBlog.Data
 {
     public class User : IEntityBase
     {

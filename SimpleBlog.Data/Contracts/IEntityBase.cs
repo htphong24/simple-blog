@@ -1,4 +1,4 @@
-﻿namespace SimpleBlog.Services.Contracts
+﻿namespace SimpleBlog.Data.Contracts
 {
     public interface IEntityBase
     {
