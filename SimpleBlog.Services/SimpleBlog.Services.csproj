@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.1" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\SimpleBlog.Data\SimpleBlog.Data.csproj" />
   </ItemGroup>
 
