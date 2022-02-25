@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SimpleBlog.Data;
 using SimpleBlog.Data.Repos;
+using SimpleBlog.Services;
+using SimpleBlog.Services.Contracts;
 
 namespace SimpleBlog.WebApp
 {
@@ -22,6 +24,12 @@ namespace SimpleBlog.WebApp
 
             services.AddScoped<IUserRepository, UserRepository>();
 
+            services.AddSingleton<IAuthService>(
+                new AuthService(
+                    Configuration.GetValue<string>("JWTSecretKey"),
+                    Configuration.GetValue<int>("JWTLifespan")
+                )
+            );
 
         }
 
