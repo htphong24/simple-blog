@@ -9,6 +9,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SimpleBlog.Data\SimpleBlog.Data.csproj" />
     <ProjectReference Include="..\SimpleBlog.Services\SimpleBlog.Services.csproj" />
   </ItemGroup>
