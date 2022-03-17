@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using SimpleBlog.Data;
-using SimpleBlog.Data.Contracts;
-
-namespace SimpleBlog.Services.Contracts
+﻿namespace SimpleBlog.Data.Contracts
 {
     public interface IUserRepository : IEntityBaseRepository<User>
     {
