@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using SimpleBlog.Data.Contracts;
 
 namespace SimpleBlog.Data.Repos
 {
@@ -8,7 +9,7 @@ namespace SimpleBlog.Data.Repos
     {
         public UserRepository(BlogContext context) : base(context) { }
 
-        public bool isEmailUniq(string email)
+        public bool IsEmailUniq(string email)
         {
             var user = this.GetSingle(u => u.Email == email);
             return user == null;

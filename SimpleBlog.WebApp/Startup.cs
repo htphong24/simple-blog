@@ -19,6 +19,7 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
 using SimpleBlog.Data;
+using SimpleBlog.Data.Contracts;
 using SimpleBlog.Data.Repos;
 using SimpleBlog.Services;
 using SimpleBlog.Services.Contracts;
